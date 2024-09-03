@@ -1,0 +1,31 @@
+name: x_overlay
+description: "easy overlay."
+version: 1.0.0
+homepage:
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  statemachine: ^3.3.1
+  plugin_platform_interface: ^2.1.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  import_sorter: ^4.6.0 # run 'flutter pub run import_sorter:main'
+  dart_code_metrics: any
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.yoer.x_overlay
+        pluginClass: XOverlayPlugin
+      ios:
+        pluginClass: XOverlayPlugin
